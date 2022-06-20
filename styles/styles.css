@@ -1,0 +1,113 @@
+header, footer {
+    width:100%;
+    background-color: rgb(158, 135, 104);
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    border-top:2px solid black;
+    padding: 1.5REM;
+}
+
+#container{
+    width:100%;
+    height: fit-content;
+    z-index: -1;
+    border:2px solid black;
+    background-image: url("../images/RIT_Background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: orange;
+    font-size: 3REM;
+    margin-left: 1.25REM;
+    line-height: 3REM;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    width: fit-content;
+}
+
+h2 {
+    font-size: 2.75REM;
+    margin-left: 1.5REM;
+}
+
+h2, p {
+    color: black;
+}
+
+p, ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25REM;
+    line-height: 1.5REM;
+    width: fit-content;
+}
+
+p {
+    margin-left: 1.3REM;
+}
+
+#IntroParagraph{
+    width:60%;
+}
+
+.ulBox {
+    background-color: rgb(252, 202, 142);
+    color: white;
+    width: fit-content;
+    padding: .25REM;
+    padding-right: 1.25REM;
+    border: 2px solid black;
+    margin-left: 5%;
+}
+
+#ProfileFaceImage {
+    border: 2px solid black;
+    position:absolute;
+    top:13REM;
+    left:69%;
+}
+
+main {
+    display:flex;
+    flex-flow:column wrap;
+}
+
+@media (max-width:1180px){
+    #ProfileFaceImage, .ulBox {
+        align-self:center;
+    }
+
+    #ProfileFaceImage {
+        position:static;
+        margin: 1REM 0REM 3REM 0REM;
+    }
+
+    .ulBox {
+        margin-left: 1.5REM;
+        margin-right: 1.5REM;
+    }
+
+    #IntroParagraph {
+        width:fit-content;
+    }
+
+    p {
+        margin-right: 1.3REM;
+    }
+
+    #container {
+        background-image: url("../images/RIT_Background_Mobile.jpg");
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+}
